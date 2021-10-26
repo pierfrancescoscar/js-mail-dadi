@@ -7,19 +7,15 @@
 
 const userNumber = Math.floor(Math.random() * 6) + 1;
 const cpuNumber = Math.floor(Math.random() * 6) + 1;
-console.log(userNumber);
-console.log(cpuNumber);
 
 // Let's show the winner: who has higher number wins
 
     if (userNumber > cpuNumber) {
-        alert(`Il numero ${userNumber} è maggiore di ${cpuNumber} e quindi vince!`);
+        alert(`Il numero ${userNumber} è maggiore di ${cpuNumber} e quindi vince l'user!`);
     }
-    else {
-        alert(`Il numero ${cpuNumber} è maggiore di ${userNumber} e quindi vince!`)
+    else if (cpuNumber > userNumber) {
+        alert(`Il numero ${cpuNumber} è maggiore di ${userNumber} e quindi vince la CPU!`);
+
+    } else {
+        alert("Non c'è nessun vincitore. Pareggio!");
     }
-
-    
-
-
-
